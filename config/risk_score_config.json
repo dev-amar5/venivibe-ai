@@ -1,0 +1,50 @@
+{
+  "alerts": {
+    "Mass Refund": {
+      "base_weight": 30,
+      "severity": [
+        {"threshold": 80, "multiplier": 2.5},
+        {"threshold": 50, "multiplier": 1.0},
+        {"threshold": 0, "multiplier": 1.0}
+      ]
+    },
+    "Suspicious Bulk Purchase": {
+      "base_weight": 25,
+      "severity": [
+        {"threshold": 30, "multiplier": 2.0},
+        {"threshold": 20, "multiplier": 1.0},
+        {"threshold": 0, "multiplier": 1.0}
+      ]
+    },
+    "Multiple Failed Logins": {
+      "base_weight": 20,
+      "severity": [
+        {"threshold": 10, "multiplier": 2.5},
+        {"threshold": 5, "multiplier": 1.0},
+        {"threshold": 0, "multiplier": 1.0}
+      ]
+    },
+    "New High-Value Event": {
+      "base_weight": 15,
+      "severity": [
+        {"threshold": 500, "multiplier": 1.8},
+        {"threshold": 200, "multiplier": 1.0},
+        {"threshold": 0, "multiplier": 1.0}
+      ]
+    },
+    "Duplicate Listings or Clones": {
+      "base_weight": 10,
+      "severity": [
+        {"threshold": 1, "multiplier": 1.5},
+        {"threshold": 0, "multiplier": 1.0}
+      ]
+    }
+  },
+  "context_modifiers": {
+    "FirstTimeOrganizer": 1.5,
+    "VerifiedOrganizer": 0.85,
+    "SuspiciousIP": 1.8,
+    "TimingSpike": 2.0,
+    "PriorRiskFlagged": 1.6
+  }
+}
