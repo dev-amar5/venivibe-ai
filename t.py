@@ -6,3 +6,4 @@ port = os.getenv("port")
 database_name = os.getenv("database_name")
 
 print(f"postgresql://{username}:{password}@{remote_host}:{port}/{database_name}")
+print("Y")
