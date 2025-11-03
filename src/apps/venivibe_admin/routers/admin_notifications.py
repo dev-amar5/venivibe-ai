@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, Query
 from db import get_db_session
-from apps.venivibe_admin.services.admin_notifications import *
+from src.apps.venivibe_admin.services.admin_notifications import *
 
 router = APIRouter(prefix="/notifications", tags=["notifications"])
 

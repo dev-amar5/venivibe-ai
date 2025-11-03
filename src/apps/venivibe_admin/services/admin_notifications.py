@@ -6,8 +6,8 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from db import SessionLocal
-from apps.venivibe_admin.services.utils import load_config
-from apps.venivibe_admin.schemas.admin_notifications import *
+from src.apps.venivibe_admin.services.utils import load_config
+from src.apps.venivibe_admin.schemas.admin_notifications import *
 
 # ==============================
 # Load Risk Score Config

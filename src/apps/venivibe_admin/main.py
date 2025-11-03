@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from apps.venivibe_admin.services.scheduler import start_scheduler
-from apps.venivibe_admin.routers.admin_notifications import router as notifications_router
+from src.apps.venivibe_admin.services.scheduler import start_scheduler
+from src.apps.venivibe_admin.routers.admin_notifications import router as notifications_router
 import logging
 
 scheduler = start_scheduler()
