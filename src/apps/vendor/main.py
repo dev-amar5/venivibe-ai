@@ -1,6 +1,6 @@
 import uvicorn
 from fastapi import FastAPI
-from src.apps.venivibe_vendor.routers.sales_prediction import router as sales_predicition_router
+from src.apps.vendor.routers.sales_prediction import router as sales_predicition_router
 import logging
 
 

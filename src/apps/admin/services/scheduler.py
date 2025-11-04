@@ -1,6 +1,6 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 from db import SessionLocal
-from src.apps.venivibe_admin.services.admin_notifications import (
+from src.apps.admin.services.admin_notifications import (
     detect_combined_alerts,
     save_alert
 )
