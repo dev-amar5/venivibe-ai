@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from src.apps.vendor.main import app as vendor_app
-from src.apps.admin.main import app as admin_app
+from src.apps.vendor.app import app as vendor_app
+from src.apps.admin.app import app as admin_app
 
 app = FastAPI(title="Venivibe Unified API")
 
