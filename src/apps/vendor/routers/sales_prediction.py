@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, Query
-from src.apps.vendor.services.sales_prediction import *
+from apps.vendor.services.sales_prediction import *
 
 router = APIRouter(prefix="/sales_prediction", tags=["sales_prediction"])
 

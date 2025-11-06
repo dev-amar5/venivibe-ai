@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, Query
 from db import get_db_session
-from src.apps.admin.services.admin_notifications import *
+from apps.admin.services.admin_notifications import *
 
 router = APIRouter(prefix="/notifications", tags=["notifications"])
 

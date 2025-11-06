@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from src.apps.admin.services.scheduler import start_scheduler
-from src.apps.admin.routers.admin_notifications import router as notifications_router
+from apps.admin.services.scheduler import start_scheduler
+from apps.admin.routers.admin_notifications import router as notifications_router
 import logging
 
 scheduler = start_scheduler()

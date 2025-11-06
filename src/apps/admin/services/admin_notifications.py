@@ -6,8 +6,8 @@ from sqlalchemy import text
 from sqlalchemy.orm import Session
 
 from db import SessionLocal
-from src.apps.admin.services.utils import load_config
-from src.apps.admin.schemas.admin_notifications import *
+from apps.admin.services.utils import load_config
+from apps.admin.schemas.admin_notifications import *
 
 # ==============================
 # Load Risk Score Config
